@@ -9,6 +9,7 @@ result5 = num1 % num2
 result6 = num1 ** num2
 result7 = num1 ++
 result7 = num1 --
+
 console.log(result1);
 console.log(result2);
 console.log(result3);
