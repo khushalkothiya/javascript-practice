@@ -216,3 +216,55 @@
 // }
 
 // console.log(getProperty(person, "lastName")); // Output: 'Doe'
+
+// //scopes
+
+// var teacher = "sanket singh"; // global scope
+// function fun(){
+//     var teacher = "ssarthak";
+//     console.log("hello",teacher);
+// }
+
+// function gun(){
+//     var student = "aman";
+//     console.log(student)
+// }
+// fun();
+// gun();
+
+// //scopes
+
+// var teacher = "sanket singh";
+// function fun() {
+//   var teacher = "sarthak";
+//   console.log("hello", teacher);
+// }
+// function gun(){
+//     var student = "aman";
+//     console.log("hello",teacher);
+// }
+// fun();
+// gun();
+
+// //scops
+
+// var teacher = "sanket singh";
+// function fun(){
+//     teacher = "sarthak";
+//     content = "js";
+//     console.log("wow",content,teacher);
+// }
+// fun();
+// console.log(teacher);
+// console.log(content);
+
+// //scops
+
+// var x=10;
+// console.log(x,y);
+// if(true){
+//     var x = 20;
+//     var y = 30;
+//     console.log(x,y);
+// }
+// console.log(x,y);
