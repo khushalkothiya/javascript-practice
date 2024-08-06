@@ -67,25 +67,109 @@
 // console.log(array[2]);  //output - undefined
 // console.log(array.length);  //output - 4 same length evenafter delete
 
+// for (let i=1;i<=5;i++){
+//     console.log(i);
+// }
 
+// //looping through an array
 
-//iterating of array items
+// const fruits = ["apple","banana","cherry"];
 
-// for loop
-
-// const array = [1,2,3]; 
-
-// for(let index = 0; index < array.length; index++){
-//     const element = array[index];
-//     console.log(element);
+// for(let i=0;i<fruits.length;i++){
+//     console.log(fruits[i]);
 // }
 
 
-//while loop
+//nested 'for' loops:
 
-// const array = [1,2,4,3];
-// let i = 0;
-// while (array.length > i){
-//     console.log(array[i]);
-//     i++;
+// for (let i=1;i<=3;i++){
+//     for (let j=1;j<=3;j++){
+//         console.log("i = ${i},j = ${j}")
+//     }
 // }
+
+// //looping with a break statement 
+
+// for (let i=1;i<=10;i++){
+//     if(i==5){
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// //looping with a continue statement
+
+// for (let i=1;i<=10;i++){
+//     if(i%2 === 0){
+//         continue;
+//     }
+//     console.log(i)
+// }
+
+// //for of loop Iterating Over an Array
+
+// const fruits = ["apple","banana","cherry"];
+
+// for (const fruit of fruits){
+//     console.log(fruit);
+// }
+
+// // for of loop Iterating Over a String
+
+// const word = "hello";
+
+// for (const letter of word){
+//     console.log(letter);
+// }
+
+// for of loop iterating over a set
+
+// const uniqueNumbers = new setInterval([1,2,3,4,5])
+// for (const number of uniqueNumbers){
+//     console.log(number);
+// }
+
+//for of loop iterating over a map
+
+// const map = new Map();
+// map.set('a', 1);
+// map.set('b', 2);
+// map.set('c', 3);
+
+// for (const [key, value] of map) {
+//     console.log(`${key} => ${value}`);
+// }
+
+// //for of loop skipping items
+
+// const numbers = [1,2,3,4,5];
+// for(const number of numbers){
+//     if(number % 2 --- 0){
+//         continue;
+//     }
+//     console.log(number);
+// }
+
+// //while loop
+
+// let number = 1;
+// while (number <= 5){
+//     console.log(number);
+// }
+
+// // dowhile loop
+
+// let number = 1;
+// do{
+//     console.log(number);
+//     number++;
+// }while(number <= 5);
+
+// //while loop
+
+// let number =1;
+// while (true){
+//     if(number>5)break;
+//     console.log(number);
+//     number++;
+// }   

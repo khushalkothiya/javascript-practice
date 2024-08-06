@@ -1,106 +1,95 @@
-// //slice method 
+// //charAt(index)
 
-// console.log("hello world!".slice(6))  //world!
-// console.log("hello world!".slice(6,11)) //world
+// let str = "hello";
+// console.log(str.charAt(1));
 
+// //charCodeAt(index)
 
+// let str = "Hello";
+// console.log(str.charCodeAt(1));
 
-// //substring 
+// //concat(..strings)
 
-// console.log("hello".substring(2))  //llo
-// console.log("hello".substring(1,3))  //el
+// let str1 = "hello";
+// let str2 = "world";
+// console.log(str1.concat("", str2));
 
+// //includes
 
+// let str = "hello world";
+// console.log(str.includes("world"));
 
-// //substr
+// //indexOf
 
-// const str = "pw skills"
+// let str = "Hello World";
+// console.log(str.indexOf("world"))
 
-// console.log(str.substr(1,2));  //w
-// console.log(str.substr(2));   //skills
+// //lastIndexOf
 
+// let str = "hello world world";
+// console.log(str.lastIndexOf("world"));
 
+// //match
+
+// let str = "hello world";
+// console.log(str.match(/world/));
 
 // //replace
 
-// console.log("hello world world".replace("world","earth"))  //hello earth world
-// console.log("hello world world".replaceAll("world","earth"))  //hello earth earth
-
-
-
-// //to upper case
-
-// console.log("Hello World".toLowerCase());  //hello world
-
-
-
-// //concat
-
-// const str1 = "PW";
-// const str2 = "SKILLS"
-
-// console.log(str1.concat("",str2));  // PW SKILLS
-// console.log(str2.concat("",str1));  //SKILLS PW
-
-
-
-// //Split
-
-// console.log("hello,world,hello,world".split(","));
-
-
-
-// //indexof
-
-// console.log("indexOf".indexOf("O"));  //5
-// console.log("indexOf".indexOf("m"));  //-1
-
-
-
-// //startswith 
-
-// console.log("hello world".startsWith("hello"));  //true
-
-
-
-// //endswith
-
-// console.log("endswith".endsWith("end"));  //true
-// console.log("endswith".endsWith("with"));  //false
-
-
+// let str = "Hello World";
+// console.log(str.replace("World","universe"));
 
 // //search
 
-// let str = "hello pw welcome to the world"
-// let searchTerm = "pw";
-// let result = str.search(searchTerm);
-// console.log('search Term:',searchTerm); //sarch term
-// console.log("result:",result);
+// let str = "hello world"
+// console.log(str.search(/world/));
 
+// //slice
 
+// let str="hello world";
+// console.log(str.slice(0,5));
+
+// //split
+
+// let str = "hello world"
+// console.log(str.split(""));
+
+// //substring
+
+// let str = "hello world";
+// console.log(str.substring(0,5));
+
+// //toLowerCase
+
+// let str = "hello World";
+// console.log(str.toLowerCase());
+
+// //toUpperCase
+
+// let str = "hello World";
+// console.log(str.toUpperCase());
 
 // //trim
 
-// console.log("hello world".trim());
+// let str = "  hello world  ";
+// console.log(str.trim());
 
+// // trimStart
 
+// let str = "   Hello World";
+// console.log(str.trimStart());
 
-//chartAt
+// //trimEnd
 
-// console.log("chartAt".charAt(3));
+// let str = "hello world";
+// console.log(str.trimEnd());
 
+// //padEnd
 
+// let str = "5";
+// console.log(str.padStart(3,"0"));
 
-//at
+// //repeat
 
-// console.log("hello".at(1));
-// console.log("hello".at(-1));
-
-
-
-//charcodeAt
-
-// const str = "PW SKILLS"
-// const index = 4;
-// console.log("charm code",str.charCodeAt(index));
+// let str = "hello";
+// console.log(str.repeat(3));
