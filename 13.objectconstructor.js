@@ -101,3 +101,24 @@
 //   console.log("i am a" + this.role);
 // };
 // console.log(Person);
+
+// //Removing a property and method to the instance
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.sayHello = function () {
+//     console.log("hello,my name is ${this.name} and i am ${this.age} years old");
+//   };
+// }
+// const person = new Person("pw",5);
+
+// person.role = "admin";
+// person.getRole = function() {
+//     console.log("i am a"+this.role);
+// };
+
+// delete person.sayHello;
+// delete person.name;
+
+// console.log(person)
