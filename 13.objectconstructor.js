@@ -122,3 +122,115 @@
 // delete person.name;
 
 // console.log(person)
+
+// // 1. Basic Object Constructor
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+// const person1 = new Person("Alice",30);
+// const person2 = new Person("bob",25);
+
+// // 2.complete constructor
+
+// function Person(name,age) {
+//     this.name = name;
+//     this.age = age;
+// }
+// Person.prototype.greet = function() {
+//     console.log("hello my name is ${this.name} am i am ${this.age} years old");
+// };
+
+// const alice = new Person ("Alice",30);
+// const bob = new Person("bob",25)
+
+// alice.greet();
+// bob.greet();
+
+// //complete class
+
+// class Person {
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet(){
+//         console.log("hello,my name is ${this.name} and i am ${this.age} yeras old");
+//     }
+// }
+
+// const alice = new Person("Alice",30);
+// const bob = new Person("bob,25");
+
+// alice.greet();
+// bob.greet();
+
+// //example with inheritance
+
+// function Person (name,age){
+//     this.name = name;
+//     this.age = age;
+// }
+// personalbar.prototype.greet = function() {
+//     console.log("hello,my name is ${this.name} and i am ${this.age} years old");
+// }
+
+// //employee constructor function
+
+// function Employee(name,age,jobTitle){
+//     personalbar.call(this,name,age);
+//     this.jobTitle = jobtitle;
+// }
+
+// //setting up prototypeal inheritance
+
+// Emmployee.prototype = object.create(person.prototype);
+// Employee.prototype.constructor = Employee;
+
+//adding methods to employee's prototype
+
+// Employee.prototype.describejob = function() {
+//     console.log("i a, a ${this.jobtitle}");
+// };
+
+// //example
+
+// function Person(first,last,age,eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+// }
+
+// const myFather = new Person("john","doe",50,"blue");
+// const myMother = new Person("sally","rally",48,"green");
+// const mySister = new Person("Anna","rally",48,"green");
+// const mySelf = new Person("johny","Rally",22,"green");
+
+// console.log(myFather)
+
+////example
+
+// function Person(first,last,age,eyecolor){
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyecolor = eyecolor;
+//     this.nationality = "english";
+// }
+
+// myFather.nationality = "English";
+
+// //example
+
+// function Person(first,last,age,eyecolor){
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+//     this.fullName = function(){
+//         return this.firstName + "" + this.lastName;
+//     }
+// }
+
