@@ -144,21 +144,45 @@
 // console.log(person1.species);
 // console.log(person2.species);
 
-// example = 11
+// // example = 11
 
-function Animal(name) {
-    this.name = name; 
-}
-Animal.prototype.speak  = function() {
-    console.log("${this.name} makes a noise.");
-}
-function Dog(name) {
-    Animal.call(this,name);
-}
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.contructor = Dog;
-Dog.prototype.speak = function() {
-    console.log(`${this.name}barks`);
+// function Animal(name) {
+//     this.name = name; 
+// }
+// Animal.prototype.speak  = function() {
+//     console.log("${this.name} makes a noise.");
+// }
+// function Dog(name) {
+//     Animal.call(this,name);
+// }
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.contructor = Dog;
+// Dog.prototype.speak = function() {
+//     console.log(`${this.name}barks`);
+// };
+// const myDog = new ("rex");
+// myDog.speack();
+
+// //example = 12
+
+// function Person(name){
+//     this.name = name;
+// }
+
+// Person.prototype.greet = function() {
+//     return `hello my name is ${this.name}`;
+// };
+
+// const alice = new Person("Alice");
+// console.log(alice.greet);
+
+//example = 14
+
+const myObject = {
+    city:"madrid",
+    greet() {
+        console.log(`greeting from ${this.city}`);
+    }
 };
-const myDog = new ("rex");
-myDog.speack();
+
+myObject.greet();
