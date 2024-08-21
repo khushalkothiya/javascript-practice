@@ -147,7 +147,7 @@
 // // example = 11
 
 // function Animal(name) {
-//     this.name = name; 
+//     this.name = name;
 // }
 // Animal.prototype.speak  = function() {
 //     console.log("${this.name} makes a noise.");
@@ -176,13 +176,153 @@
 // const alice = new Person("Alice");
 // console.log(alice.greet);
 
-//example = 14
+// //example = 14
 
-const myObject = {
-    city:"madrid",
-    greet() {
-        console.log(`greeting from ${this.city}`);
-    }
-};
+// const myObject = {
+//     city:"madrid",
+//     greet() {
+//         console.log(`greeting from ${this.city}`);
+//     }
+// };
 
-myObject.greet();
+// myObject.greet();
+
+// //example = 15
+
+// const myDate = new Date();
+// let object = myDate;
+
+// do{
+//     object = Object.getPrototypeOf(object);
+//     console.log(object);
+// }while(object);
+
+// //example = 16
+
+// const myDate = new Date(1995, 11, 17);
+
+// console.log(myDate.getTime());
+
+// myDate.getTime = function() {
+//     console.log("something else!!");
+// };
+
+// myDate.getTime();
+
+// //example = 17
+
+// function Person (first,last,age,eyecolor){
+//     this.firstName = first;
+//     this.lasttime= last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+// }
+
+// const myFather = new Person("john","doe",50,"blue");
+// const myMother = new Person("sally","rally",48,"green");
+
+// console.log(myFather);
+// console.log(myMother);
+
+// function Person (first,last,age,eyecolor) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+//     this.nationality = "english";
+
+// //example = 18
+
+// Date.prototype.myMonth = function () {
+//   if (this.getMonth() == 0) {
+//     return "january";
+//   }
+//   if (this.getMonth() == 1) {
+//     return "february";
+//   }
+//   if (this.getMonth() == 2) {
+//     return "march";
+//   }
+//   if (this.getMonth() == 3) {
+//     return "April";
+//   }
+//   if (this.getMonth() == 4) {
+//     return "May";
+//   }
+//   if (this.getMonth() == 5) {
+//     return "June";
+//   }
+//   if (this.getMonth() == 6) {
+//     return "July";
+//   }
+//   if (this.getMonth() == 7) {
+//     return "August";
+//   }
+//   if (this.getMonth() == 8) {
+//     return "September";
+//   }
+//   if (this.getMonth() == 9) {
+//     return "October";
+//   }
+//   if (this.getMonth() == 10) {
+//     return "November";
+//   }
+//   if (this.getMonth() == 11) {
+//     return "December";
+//   }
+// };
+
+// const d = new Date();
+// let month = d.myMonth();
+
+// //example = 19
+
+// Boolean.prototype.myColor = function() {
+//     if (this.valueOf() == true) {
+//         return "green";
+//     }else{
+//         return = "red";
+//     }
+// };
+
+// //example = 20
+
+// let bool = false;
+// let value = bool.valueOf();
+// console.log(bool)
+
+// //example = 21
+
+// let bool = true;
+// let text = bool.toString();
+
+// //example = 22
+
+// Number.prototype.myMethod = function () {
+//   return this.valueOf() / 2;
+// };
+
+// let n= 55;
+// let x = n.myMethod();
+
+// //example = 23
+
+// function employee(name,jobtitle,born) {
+//     this.name = name;
+//     this.jobtitle = jobtitle;
+//     this.born = born;
+// }
+
+// employee.prototype.salary = 2000;
+
+// const fred = new employee("fred flintstone","caveman",1970);
+
+// console.log(fred);
+
+// class Dog{
+//     constructor(name){
+//         this.name = name;
+//     }
+// }
+// Dog.prototype.species = "dog";
+// console.log(new Dog("jack").species);
